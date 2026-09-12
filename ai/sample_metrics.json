@@ -1,10 +1,10 @@
 {
-  "period": "2026-09",
-  "revenue": 231416.81,
-  "revenue_mom_pct": -94.08,
-  "orders": 46,
-  "customers": 46,
-  "aov": 5030.8,
-  "return_rate": 0.0438,
+  "period": "2026-08",
+  "revenue": 3908581.63,
+  "revenue_mom_pct": -4.37,
+  "orders": 811,
+  "customers": 710,
+  "aov": 4819.46,
+  "return_rate": 0.0937,
   "anomaly_days": 0
 }
