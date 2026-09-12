@@ -1,0 +1,23 @@
+name: Data quality checks
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pandas numpy
+      - run: |
+          python - <<'PY'
+          import pandas as pd
+          o=pd.read_csv('data/raw/orders.csv'); c=pd.read_csv('data/raw/customers.csv')
+          assert o.order_id.is_unique
+          assert c.customer_id.is_unique
+          assert o.customer_id.isin(c.customer_id).all()
+          assert o.discount_pct.between(0,1).all()
+          assert o.rating.between(1,5).all()
+          assert (o.quantity>0).all()
+          print('Data-quality validation passed')
+          PY
