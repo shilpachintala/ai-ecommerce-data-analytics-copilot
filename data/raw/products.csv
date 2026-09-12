@@ -1,0 +1,13 @@
+product_id,product_name,category,list_price
+P001,Wireless Earbuds,Electronics,2499
+P002,Smart Watch,Electronics,4999
+P003,Mechanical Keyboard,Electronics,3499
+P004,Office Chair,Home & Office,8999
+P005,Standing Desk,Home & Office,13999
+P006,Coffee Maker,Home & Office,4599
+P007,Running Shoes,Fashion,3299
+P008,Backpack,Fashion,1899
+P009,Fitness Band,Electronics,2199
+P010,Laptop Stand,Home & Office,1599
+P011,Skin Care Kit,Beauty,1299
+P012,Hair Dryer,Beauty,1799
